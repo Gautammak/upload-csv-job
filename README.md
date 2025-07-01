@@ -15,7 +15,7 @@ redis-server
 
 Create a .env file:
 PORT=3000
-MONGO_URI=mongodb://localhost:27017/csv_upload
+MONGO_URI=mongodb://localhost:27017/csv_user
 REDIS_URL=redis://127.0.0.1:6379
 JWT_SECRET=your_secret_key
 

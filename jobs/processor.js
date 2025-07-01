@@ -3,8 +3,9 @@ const fs = require('fs');
 const csv = require('csv-parser');
 const Record = require('../models/Record.model.js');
 const { validateCSV } = require('../utils/validations.js');
+require('dotenv').config()
 
-mongoose.connect('mongodb://127.0.0.1:27017/csv_user')
+mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("Processor MongoDB connected"))
   .catch(err => console.error(" MongoDB error:", err.message));
 
