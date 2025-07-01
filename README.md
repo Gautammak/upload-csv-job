@@ -23,7 +23,7 @@ make uploads folder on root
 
 npm install
 
-node server start
+for node server start :-
 npm start
 
 //POST
